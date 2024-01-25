@@ -4,98 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sat Lorem</title>
-    <link rel="stylesheet" href="./style.css">
-
+    <title>Soren Bakhol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ol+Chiki:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
-        #sec1 {
-            width: auto;
-            height: 100px;
-            margin: 50px 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: gray;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans Ol Chiki', sans-serif;
         }
 
-        #main-btn {
-            display: flex;
-        }
-
-        #main-inpu {
+        body {
+            width: 100vw;
+            height: 100vh;
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
-        #main-inpu input {
-            width: 50px;
-            height: 30px;
-            border-radius: 50px;
-            border: none;
-
-            margin: 10px;
-            text-align: center;
+        #headline {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: GrdAni 15s ease infinite;
         }
 
-        #generate-btn button {
-            width: 100px;
-            height: 60px;
-            border-radius: 50px;
+        @keyframes GrdAni {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
+
+        h1 {
+            font-size: 6rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+
+        #typewriter-text {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        @media screen and (min-width: 0px) and (max-width: 240px) {
+            h1 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 8px;
+            }
+        }
+
+        @media screen and (min-width: 241px) and (max-width: 640px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (min-width: 641px) and (max-width: 1007px){
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (min-width: 1008px) and (max-width: 1366px) {}
     </style>
 </head>
 
 <body>
-    <header></header>
-    <nav class="flex">
-        <div class="flx">
-            <h1>sat Lorem</h1>
-        </div>
-    </nav>
-    <main>
-        <section id="sec1">
-            <div id="main-btn" class="">
-                <div id="main-inpu">
-                    <input type="number" name="" id="" placeholder="Words">
-                    <input type="number" name="" id="" placeholder="Para.">
-                </div>
-                <div id="generate-btn" class="flx">
-                    <button>Generate</button>
-                </div>
-            </div>
-        </section>
-        <!-- <section id="main-content sec2" class="">
-            <div id="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem explicabo praesentium eveniet
-                reiciendis porro reprehenderit rem, necessitatibus fuga sapiente harum voluptates est culpa ipsa
-                provident sit molestiae ad doloremque a illo quia exercitationem cumque voluptatum vitae. Veritatis
-                culpa dolorum facere dolor porro error asperiores labore eaque quis possimus, saepe, eveniet voluptas
-                necessitatibus quo dignissimos unde quos maiores repudiandae! Iure assumenda magnam sunt, voluptatibus
-                deleniti nulla quidem tenetur commodi aliquid molestias nisi perspiciatis nemo nam sit maxime iste cum
-                totam hic, aspernatur architecto! Architecto perspiciatis eos dolores dolore error eius voluptate
-                possimus dolorum at unde quo ipsa, eaque itaque quidem natus nihil explicabo, enim quibusdam eum debitis
-                nostrum, veniam laborum esse? Cupiditate soluta ab dolore earum perferendis sit? Eaque voluptatibus
-                incidunt alias iure veritatis ex vitae sed? Suscipit, consectetur temporibus. Magnam adipisci aperiam
-                nobis saepe quia consequuntur ullam quas eaque cum, sit omnis mollitia commodi atque officiis earum
-                rerum. Explicabo id et earum temporibus eos veniam! Beatae explicabo tenetur itaque dolore inventore
-                fugit ipsa voluptas exercitationem. Suscipit voluptas pariatur eligendi facilis, nam vel temporibus
-                eveniet odit maxime, officia autem sequi in saepe inventore veritatis sed recusandae exercitationem! Vel
-                ad inventore repudiandae incidunt distinctio assumenda, tempora itaque nam perferendis culpa eligendi
-                consequuntur molestias veniam, nulla quo, eius quas! Placeat ducimus, consequuntur itaque commodi
-                accusantium sint dolore fuga provident illum magni. Similique quisquam expedita porro quod corporis
-                repudiandae id eos minima quas qui, veniam aliquid provident exercitationem perferendis omnis quia
-                laborum maiores ratione perspiciatis labore rem. Pariatur, asperiores! Nobis totam explicabo amet,
-                accusantium tempora libero cum, pariatur nulla officiis ea corrupti. Praesentium, vitae et quidem
-                architecto aliquam, provident optio tenetur nulla, delectus molestias minus exercitationem deleniti?
-                Repellendus, impedit? Fugiat dolor explicabo fugit, sequi quasi consequatur a praesentium accusamus
-                nulla nesciunt eos rem ut, natus veniam tempore at unde incidunt doloribus necessitatibus. Delectus
-                quibusdam consectetur ipsum possimus vel eum repellat ut explicabo reiciendis quam inventore
-                reprehenderit atque, cum ea qui, vitae ad necessitatibus ex.
-            </div>
-        </section> -->
+    <div class="container">
+        <h1 id="headline"></h1>
+        <p id="paragraph" style="display: none;"></p>
+    </div>
 
-    </main>
-    <footer></footer>
+    <script>
+        const headline = "ᱟᱹᱰᱤᱜ ᱞᱚᱜᱚᱱ ᱜᱮ ᱦᱟ!";
+        const headlineElement = document.getElementById('headline');
+        let i = 0;
+        function typeHeadline() {
+            if (i < headline.length) {
+                headlineElement.innerHTML += headline.charAt(i);
+                i++;
+                setTimeout(typeHeadline, 100);
+            } else {
+                typeParagraph();
+            }
+        }
+        typeHeadline();
+        const paragraph = "ᱥᱟᱨᱦᱟᱣ ᱦᱮᱡ ᱞᱟᱹᱜᱤᱫ ᱾";
+        const paragraphElement = document.getElementById('paragraph');
+        let j = 0;
+        function typeParagraph() {
+            paragraphElement.style.display = "block";
+            if (j < paragraph.length) {
+                paragraphElement.innerHTML += paragraph.charAt(j);
+                j++;
+                setTimeout(typeParagraph, 100);
+            }
+        }
+    </script>
 </body>
 
 </html>
