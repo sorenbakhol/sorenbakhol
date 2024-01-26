@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ol+Chiki:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/sorenbakhol/SOBF@567d909cf8ddb62844858f1fc2544d077bb0d888/images/favicon.ico"/>
     <style>
         * {
             margin: 0;
@@ -25,14 +24,17 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            background: rgb(0, 0, 0);
         }
 
         #headline {
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+            background: linear-gradient(-45deg, #128807, #ffffff, #ff9933);
             background-size: 400% 400%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: GrdAni 15s ease infinite;
+            /* animation: GrdAni 12s ease infinite; */
+            animation: GrdAni 10s ease infinite;
         }
 
         @keyframes GrdAni {
@@ -57,11 +59,32 @@
         p {
             font-size: 1.4rem;
             font-weight: 500;
+            color: rgb(146, 146, 146);
         }
 
         #typewriter-text {
             white-space: nowrap;
             overflow: hidden;
+        }
+
+        #chakra {
+            width: 100px;
+            animation: chakraRotate infinite 30s linear;
+        }
+
+        @keyframes chakraRotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .Chakra {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
         }
 
         @media screen and (min-width: 0px) and (max-width: 240px) {
@@ -75,6 +98,9 @@
         }
 
         @media screen and (min-width: 241px) and (max-width: 640px) {
+            body {
+                height: 70vh;
+            }
             h1 {
                 font-size: 2rem;
             }
@@ -84,11 +110,8 @@
             }
         }
 
-        @media screen and (min-width: 641px) and (max-width: 1007px){
-
-body {
-            height: 80vh;
-        }            h1 {
+        @media screen and (min-width: 641px) and (max-width: 1007px) {
+            h1 {
                 font-size: 3rem;
             }
 
@@ -103,6 +126,9 @@ body {
 
 <body>
     <div class="container">
+        <img class="Chakra" id="chakra"
+            src="https://cdn.pixabay.com/photo/2023/06/23/17/47/ashok-chakra-8083914_1280.png" alt="Ashoka Charka"> <!-- Image by <a href="https://pixabay.com/users/swaminarayan-29487901/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8083914">Hari Gurukul</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8083914">Pixabay</a> -->
+            
         <h1 id="headline"></h1>
         <p id="paragraph" style="display: none;"></p>
     </div>
@@ -132,6 +158,13 @@ body {
                 setTimeout(typeParagraph, 100);
             }
         }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var img = document.getElementById("chakra");
+            setTimeout(function () {
+                img.style.opacity = 1;
+            }, 4000)
+        })
     </script>
 </body>
 
