@@ -24,17 +24,14 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: rgb(0, 0, 0);
         }
 
         #headline {
-            /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-            background: linear-gradient(-45deg, #128807, #ffffff, #ff9933);
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
             background-size: 400% 400%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            /* animation: GrdAni 12s ease infinite; */
-            animation: GrdAni 10s ease infinite;
+            animation: GrdAni 12s ease infinite;
         }
 
         @keyframes GrdAni {
@@ -66,27 +63,6 @@
             white-space: nowrap;
             overflow: hidden;
         }
-
-        #chakra {
-            width: 100px;
-            animation: chakraRotate infinite 30s linear;
-        }
-
-        @keyframes chakraRotate {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        .Chakra {
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-
         @media screen and (min-width: 0px) and (max-width: 240px) {
             h1 {
                 font-size: 1rem;
@@ -125,9 +101,7 @@
 </head>
 
 <body>
-    <div class="container">
-        <img class="Chakra" id="chakra"
-       " alt="Ashoka Charka"> 
+    <div class="container"> 
         <h1 id="headline"></h1>
         <p id="paragraph" style="display: none;"></p>
     </div>
@@ -157,13 +131,6 @@
                 setTimeout(typeParagraph, 100);
             }
         }
-
-        document.addEventListener("DOMContentLoaded", function () {
-            var img = document.getElementById("chakra");
-            setTimeout(function () {
-                img.style.opacity = 1;
-            }, 4000)
-        })
     </script>
 </body>
 
